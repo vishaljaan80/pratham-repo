@@ -35,9 +35,9 @@ const DynamicTableComponent = ({
   );
 
   return (
-    <div className="container w-[55vw] pl-4 ml-5 mt-5">
+    <div className="container w-[51vw] flex flex-col bg-red ml-8 mt-5">
       {/* Table */}
-      <div className="overflow-x-auto">
+      <div className="overflow-x-auto rounded-lg ">
         <table
           {...getTableProps()}
           className="w-full border-collapse border border-gray-300 shadow-md"
@@ -48,7 +48,9 @@ const DynamicTableComponent = ({
                 {headerGroup.headers.map((column) => (
                   <th
                     {...column.getHeaderProps(column.getSortByToggleProps())}
-                    className="py-3 px-4 border-b border-gray-300 text-sm font-semibold text-gray-700"
+                    className={`py-3 px-4 border-b border-gray-300 text-sm font-semibold text-gray-700 ${
+                      column.isSorted ? "bg-blue-400 text-black font-semibold w-1/3 transition-all ease-in " : ""
+                    }`}
                   >
                     {column.render("Header")}
                     <span>
@@ -116,7 +118,7 @@ const DynamicTableComponent = ({
       </div>
 
       {/* Jump to Page */}
-      <div className="mt-2">
+      <div className="mt-2 mb-10">
         <label className="mr-2">Go to page:</label>
         <input
           type="number"
