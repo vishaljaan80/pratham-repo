@@ -35,7 +35,7 @@ const DynamicTableComponent = ({
   );
 
   return (
-    <div className="container w-[51vw] flex flex-col bg-red ml-8 mt-5">
+    <div className="container sm:w-[80vw] md:w-[70vw] w-[80vw] md:px-4 px-0 flex flex-col bg-red ml-8 mt-5">
       {/* Table */}
       <div className="overflow-x-auto rounded-lg ">
         <table

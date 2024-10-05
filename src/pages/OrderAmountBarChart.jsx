@@ -46,7 +46,7 @@ const OrderAmountBarChart = () => {
   };
 
   return (
-    <div className="p-5 w-[51vw]">
+    <div className="p-5 lg:w-[51vw] w-full">
       <div className="flex justify-between items-center mb-4">
         <h2 className="text-xl font-semibold">Orders And Amount</h2>
         <select

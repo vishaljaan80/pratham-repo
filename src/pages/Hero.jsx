@@ -6,7 +6,7 @@ import OrderAmountBarChart from "./OrderAmountBarChart.jsx";
 
 const Hero = () => {
   return (
-    <div>
+    <div className="w-full ">
       <Navbar />
       <OrderDetails />
       <OrderAmountBarChart/>

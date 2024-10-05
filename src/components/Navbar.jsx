@@ -9,7 +9,7 @@ const Navbar = () => {
           <i class="text-gray-700 text-xl fa-solid fa-magnifying-glass"></i>
           <input
             type="text"
-            className="sm:w-[350px] mr-5 p-2 rounded bg-transparent outline-none text-gray-800 placeholder:font-medium"
+            className="sm:w-[350px] w-full mr-5 p-2 rounded bg-transparent outline-none text-gray-800 placeholder:font-medium"
             placeholder="Search product, supplier, order"
           />
         </div>
