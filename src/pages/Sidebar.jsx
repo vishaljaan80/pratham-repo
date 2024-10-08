@@ -1,6 +1,6 @@
 import React from 'react'
 import file from '../assets/logo.jpg'
-import { NavLink } from 'react-router-dom';
+// import { a } from 'react-router-dom';
 
 const Sidebar = () => {
   return (
@@ -16,63 +16,63 @@ const Sidebar = () => {
       </div>
       {/* Links */}
       <div className="flex text-md font-semibold flex-col mt-10">
-        <NavLink to='#'>
+        <a to='#'>
           <div className="text-center flex py-5 gap-4 border-b-2 items-center text-blue-500 justify-start pl-5 md:pl-0">
             <i className="fa-solid fa-house"></i>
             <p className='hidden md:flex'>Dashboard</p>
           </div>
-        </NavLink>
-        <NavLink to='#'>
+        </a>
+        <a to='#'>
           <div className="text-center flex py-5 gap-4 border-b-2 items-center text-gray-700 justify-start pl-5 md:pl-0">
             <i className="fa-solid fa-box"></i>
             <p className='hidden md:flex'>Categories</p>
           </div>
-        </NavLink>
-        <NavLink to='#'>
+        </a>
+        <a to='#'>
           <div className="text-center flex py-5 gap-4 border-b-2 items-center text-gray-700  pl-5 md:pl-0">
             <i className="fa-solid fa-cart-shopping"></i>
             <p className='hidden md:flex'>Product</p>
           </div>
-        </NavLink>
-        <NavLink to='#'>
+        </a>
+        <a to='#'>
           <div className="text-center flex py-5 gap-4 border-b-2 items-center text-gray-700 justify-start pl-5 md:pl-0">
             <i className="fa-solid fa-box"></i>
             <p className='hidden md:flex'>Orders</p>
           </div>
-        </NavLink>
-        <NavLink to='#'>
+        </a>
+        <a to='#'>
           <div className="text-center flex py-5 gap-4 border-b-2 items-center text-gray-700 justify-start pl-5 md:pl-0">
             <i className="fa-regular fa-user"></i>
             <p className='hidden md:flex'>Employee</p>
           </div>
-        </NavLink>
-        <NavLink to='#'>
+        </a>
+        <a to='#'>
           <div className="text-center flex py-5 gap-4 border-b-2 items-center text-gray-700 justify-start pl-5 md:pl-0">
             <i className="fa-solid fa-dollar-sign"></i>
             <p className='hidden md:flex'>Subscription</p>
           </div>
-        </NavLink>
+        </a>
       </div>
       {/* last */}
       <div className="text-md font-semibold flex flex-col mt-52">
-        <NavLink to='#'>
+        <a to='#'>
           <div className="text-center flex py-5 gap-4 border-b-2 items-center text-gray-700 justify-start pl-5 md:pl-0">
             <i className="fa-solid fa-phone"></i>
             <p className='hidden md:flex'>Phone</p>
           </div>
-        </NavLink>
-        <NavLink to='#'>
+        </a>
+        <a to='#'>
           <div className="text-center flex py-5 gap-4 border-b-2 items-center text-gray-700 justify-start pl-5 md:pl-0">
             <i className="fa-solid fa-gear"></i>
             <p className='hidden md:flex'>Settings</p>
           </div>
-        </NavLink>
-        <NavLink to='#'>
+        </a>
+        <a to='#'>
           <div className="text-center flex py-5 gap-4 border-b-2 items-center text-gray-700 justify-start pl-5 md:pl-0">
             <i className="fa-solid fa-right-from-bracket"></i>
             <p className='hidden md:flex'>Log Out</p>
           </div>
-        </NavLink>
+        </a>
       </div>
     </div>
   );

@@ -9,13 +9,12 @@ const DynamicTableComponent = ({
   onDelete,
   onView,
 }) => {
-  // Define the table instance using useTable and the additional hooks for sorting and pagination
   const {
     getTableProps,
     getTableBodyProps,
     headerGroups,
     prepareRow,
-    page, // Only the rows for the active page
+    page,
     nextPage,
     previousPage,
     canNextPage,
@@ -28,7 +27,7 @@ const DynamicTableComponent = ({
     {
       columns,
       data,
-      initialState: { pageIndex: 0 }, // Start on the first page
+      initialState: { pageIndex: 0 },
     },
     useSortBy,
     usePagination
@@ -36,21 +35,23 @@ const DynamicTableComponent = ({
 
   return (
     <div className="container sm:w-[80vw] md:w-[70vw] w-[80vw] md:px-4 px-0 flex flex-col bg-red ml-8 mt-5">
-      {/* Table */}
-      <div className="overflow-x-auto rounded-lg ">
+      <div className="overflow-x-auto rounded-lg">
         <table
           {...getTableProps()}
           className="w-full border-collapse border border-gray-300 shadow-md"
         >
           <thead className="bg-gray-100 text-left">
             {headerGroups.map((headerGroup) => (
-              <tr {...headerGroup.getHeaderGroupProps()}>
+              <tr {...headerGroup.getHeaderGroupProps()} key={headerGroup.id}>
                 {headerGroup.headers.map((column) => (
                   <th
                     {...column.getHeaderProps(column.getSortByToggleProps())}
                     className={`py-3 px-4 border-b border-gray-300 text-sm font-semibold text-gray-700 ${
-                      column.isSorted ? "bg-blue-400 text-black font-semibold w-1/3 transition-all ease-in " : ""
+                      column.isSorted
+                        ? "bg-blue-400 text-black font-semibold w-1/3 transition-all ease-in "
+                        : ""
                     }`}
+                    key={column.id} // Assign key directly here
                   >
                     {column.render("Header")}
                     <span>
@@ -62,27 +63,27 @@ const DynamicTableComponent = ({
                     </span>
                   </th>
                 ))}
-                
               </tr>
             ))}
           </thead>
           <tbody {...getTableBodyProps()}>
-            {page.map((row, rowIndex) => {
+            {page.map((row) => {
               prepareRow(row);
               return (
                 <tr
                   {...row.getRowProps()}
                   className="hover:bg-gray-50 transition-all"
+                  key={row.id || row.index} // Use row.id or row.index as a fallback
                 >
                   {row.cells.map((cell) => (
                     <td
                       {...cell.getCellProps()}
                       className="py-2 px-4 border-b border-gray-300 text-gray-600 text-sm"
+                      key={cell.id || cell.column.id} // Use cell.id or cell.column.id as a fallback
                     >
                       {cell.render("Cell")}
                     </td>
                   ))}
-                 
                 </tr>
               );
             })}
@@ -90,7 +91,6 @@ const DynamicTableComponent = ({
         </table>
       </div>
 
-      {/* Pagination Controls */}
       <div className="flex items-center justify-between mt-4">
         <button
           onClick={() => previousPage()}
@@ -117,7 +117,6 @@ const DynamicTableComponent = ({
         </button>
       </div>
 
-      {/* Jump to Page */}
       <div className="mt-2 mb-10">
         <label className="mr-2">Go to page:</label>
         <input

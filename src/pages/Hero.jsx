@@ -7,7 +7,6 @@ import OrderAmountBarChart from "./OrderAmountBarChart.jsx";
 const Hero = () => {
   return (
     <div className="w-full ">
-      <Navbar />
       <OrderDetails />
       <OrderAmountBarChart/>
       <DynamicTable />

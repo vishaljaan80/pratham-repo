@@ -13,14 +13,14 @@ const Footer = () => {
       <p className="text-slate-200 mb-10">Read More</p>
       <div className="flex flex-col sm:flex-row gap-10 mb-14">
         <div className="mail flex gap-2">
-          <i class="fa-regular fa-envelope text-2xl text-gray-400"></i>
+          <i className="fa-regular fa-envelope text-2xl text-gray-400"></i>
           <div>
             <p className="mb-2" >Mail</p>
             <p>selltech@gmail.com</p>
           </div>
         </div>
         <div className="loc flex gap-2">
-            <i class="fa-solid fa-location-dot text-2xl text-gray-400"></i>
+            <i className="fa-solid fa-location-dot text-2xl text-gray-400"></i>
           <div>
             <p className="mb-3" >Address</p>
             <p>706 Campfire Ave, jaipur, RAJ.</p>
