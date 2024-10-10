@@ -34,7 +34,7 @@ const DynamicTableComponent = ({
   );
 
   return (
-    <div className="container sm:w-[80vw] md:w-[70vw] w-[80vw] md:px-4 px-0 flex flex-col bg-red ml-8 mt-5">
+    <div className="container sm:w-[80vw] md:w-[90%] lg:w-[50vw] w-[70vw] md:px-4 px-0 flex flex-col bg-red ml-3 mt-5">
       <div className="overflow-x-auto rounded-lg">
         <table
           {...getTableProps()}
@@ -91,7 +91,7 @@ const DynamicTableComponent = ({
         </table>
       </div>
 
-      <div className="flex items-center justify-between mt-4">
+      <div className="sm:flex w-full gap-4 items-center justify-center hidden  mt-4">
         <button
           onClick={() => previousPage()}
           disabled={!canPreviousPage}
@@ -103,7 +103,7 @@ const DynamicTableComponent = ({
         >
           Previous
         </button>
-        <div className="text-sm">
+        <div className="text-sm ">
           Page {pageIndex + 1} of {pageOptions.length}
         </div>
         <button
