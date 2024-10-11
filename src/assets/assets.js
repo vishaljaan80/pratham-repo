@@ -54,52 +54,67 @@ export const images = {
 };
 
 export const plan = [
-    {
-        name: 'Basic Plan',
-        price: '20,000',
-        brief: '(Rs 7000 renews per year)',
-        features: [
-            '3 Employees or Users',
-            '1 Admin',
-            '3 Best Selling Products',
-            '100 Invoices Per Month',
-            '3 Monthly Reports Download',
-            '4 Form Fields',
-            '50 Categories',
-            '500 Products',
-        ],
-    },
-    {
-        name: 'Premium Plan',
-        price: '35,000',
-        brief: '(12,000 renews per year)',
-        features: [
-            '10 Employees or Users',
-            '3 Admin',
-            '5 Best Selling Products',
-            '300 Invoices Per Month',
-            '5 Monthly Reports Download',
-            '7 Form Fields',
-            '100 Categories',
-            '1000 Products',
-        ],
-    },
-    {
-        name: 'Master Plan',
-        price: '50,000',
-        brief: '(18,000 renews per year)',
-        features: [
-            '50 Employees or Users',
-            '5 Admin',
-            '10 Best Selling Products',
-            '500 Invoices Per Month',
-            '10 Monthly Reports Download',
-            '12 Form Fields',
-            '150 Categories',
-            '1500 Products',
-        ],
-    },
-]
+  {
+    name: "Basic Plan",
+    price: "20,000",
+    brief: "(Rs 7000 renews per year)",
+    features: [
+      "3 Employees or Users",
+      "1 Admin",
+      "3 Best Selling Products",
+      "100 Invoices Per Month",
+      "3 Monthly Reports Download",
+      "4 Form Fields",
+      "50 Categories",
+      "500 Products",
+    ],
+  },
+  {
+    name: "Premium Plan",
+    price: "35,000",
+    brief: "(12,000 renews per year)",
+    features: [
+      "10 Employees or Users",
+      "3 Admin",
+      "5 Best Selling Products",
+      "300 Invoices Per Month",
+      "5 Monthly Reports Download",
+      "7 Form Fields",
+      "100 Categories",
+      "1000 Products",
+    ],
+  },
+  {
+    name: "Master Plan",
+    price: "50,000",
+    brief: "(18,000 renews per year)",
+    features: [
+      "50 Employees or Users",
+      "5 Admin",
+      "10 Best Selling Products",
+      "500 Invoices Per Month",
+      "10 Monthly Reports Download",
+      "12 Form Fields",
+      "150 Categories",
+      "1500 Products",
+    ],
+  },
+  {
+    name: "Bussiness Plan",
+    price: "75,000",
+    brief: "(24,000 renews per year)",
+    features: [
+      "100 Employees or Users",
+      "10 Admin",
+      "15 Best Selling Products",
+      "1000 Invoices Per Month",
+      "15 Monthly Reports Download",
+      "18 Form Fields",
+      "250 Categories",
+      "Custom Plan according to you",
+    ],
+  },
+];
 
 export const data = [
   {
@@ -127,7 +142,39 @@ export const data = [
     icon: images.shoppingBag,
   },
 ];
+export const dataWeekly = [
+  { name: "Mon", orders: 24000, amount: 50000 },
+  { name: "Tue", orders: 30000, amount: 52000 },
+  { name: "Wed", orders: 26000, amount: 47000 },
+  { name: "Thu", orders: 34000, amount: 54000 },
+  { name: "Fri", orders: 22000, amount: 45000 },
+  { name: "Sat", orders: 38000, amount: 56000 },
+  { name: "Sun", orders: 20000, amount: 42000 },
+];
 
+export const dataMonthly = [
+  { name: "Jan", orders: 60000, amount: 100000 },
+  { name: "Feb", orders: 64000, amount: 105000 },
+  { name: "Mar", orders: 70000, amount: 110000 },
+  { name: "Apr", orders: 80000, amount: 120000 },
+  { name: "May", orders: 90000, amount: 130000 },
+  { name: "Jun", orders: 92000, amount: 135000 },
+  { name: "Jul", orders: 96000, amount: 140000 },
+  { name: "Aug", orders: 100000, amount: 145000 },
+  { name: "Sep", orders: 104000, amount: 150000 },
+  { name: "Oct", orders: 108000, amount: 155000 },
+  { name: "Nov", orders: 112000, amount: 160000 },
+  { name: "Dec", orders: 116000, amount: 165000 },
+];
+
+export const dataYearly = [
+  { name: "2019", orders: 640000, amount: 1200000 },
+  { name: "2020", orders: 700000, amount: 1300000 },
+  { name: "2021", orders: 740000, amount: 1400000 },
+  { name: "2022", orders: 780000, amount: 1500000 },
+  { name: "2023", orders: 820000, amount: 1600000 },
+  { name: "2024", orders: 860000, amount: 1700000 },
+];
 
 
 export const data2 = [

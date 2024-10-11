@@ -20,7 +20,7 @@ const Account = () => {
               <i className=" fa-regular fa-star"></i>
               <p>Basic Plan</p>
             </div>
-            <div className="flex gap-2">
+            <div className="flex flex-wrap gap-2">
               <button className="flex items-center gap-2 border-2 rounded-xl px-4 py-2">
                 <img src={Vector} alt="" /> Upload
               </button>
@@ -34,7 +34,7 @@ const Account = () => {
       <div className="bg-white m-4 border rounded-lg outline-none  p-4">
         <form action="">
           <div className="flex flex-wrap gap-4 text-lg text-gray-700">
-            <div className="flex w-2/5     flex-col gap-2">
+            <div className="flex w-[450px]     flex-col gap-2">
               <label htmlFor="name">Name:</label>
               <input
                 type="text"
@@ -43,7 +43,7 @@ const Account = () => {
                 placeholder="Name"
               />
             </div>
-            <div className="flex w-2/5 flex-col gap-2">
+            <div className="flex w-[450px] flex-col gap-2">
               <label htmlFor="Sub-start">Subscription Start Date:</label>
               <input
                 type="date"
@@ -51,7 +51,7 @@ const Account = () => {
                 className="border rounded-lg outline-none p-2 px-3"
               />
             </div>
-            <div className="flex w-2/5 flex-col gap-2">
+            <div className="flex w-[450px] flex-col gap-2">
               <label htmlFor="email">Email:</label>
               <input
                 type="email"
@@ -60,7 +60,7 @@ const Account = () => {
                 placeholder="Email"
               />
             </div>
-            <div className="flex w-2/5 flex-col gap-2">
+            <div className="flex w-[450px] flex-col gap-2">
               <label htmlFor="Sub-end">Subscription End Date:</label>
               <input
                 type="date"
@@ -68,7 +68,7 @@ const Account = () => {
                 className="border rounded-lg outline-none p-2 px-3"
               />
             </div>
-            <div className="flex w-2/5 flex-col gap-2">
+            <div className="flex w-[450px] flex-col gap-2">
               <label htmlFor="password">Password:</label>
               <input
                 type="text"

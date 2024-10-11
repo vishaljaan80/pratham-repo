@@ -1,12 +1,16 @@
 import React from "react";
 import TodaysOrder from "../components/TodaysOrder";
+import { data, data2 } from "../assets/assets";
 
 const ClientInvoiceLogin = () => {
   return (
     <div className="bg-slate-100 h-[124vh]">
-      <TodaysOrder />
+      <div className="md:flex">
+        <TodaysOrder data={data} />
+        <TodaysOrder data={data2} />
+      </div>
       <div className="h-[85vh] w-full flex justify-center items-center">
-        <div className="w-1/2 flex flex-col gap-4 bg-white mx-auto rounded-xl p-4">
+        <div className="sm:w-1/2 w-[90vw] flex flex-col gap-4 bg-white mx-auto rounded-xl p-4">
           <h1 className="text-2xl text-gray-800 font-semibold ">
             Client Details
           </h1>

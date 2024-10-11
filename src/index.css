@@ -11,3 +11,6 @@ html,body{
     font-weight: 500;
 }
 
+.scrollbar-hide::-webkit-scrollbar{
+    display: none;
+}

@@ -9,11 +9,11 @@ const OrderDetails = () => {
   return (
     <div className="flex flex-col gap-1 mt-2">
       {/* Today Order */}
-      <div className="lg:flex  gap-2">
-        <TodaysOrder data={data} name="Today's Orders" />
+      <div className="lg:flex justify-around gap-2">
+        <TodaysOrder data={data} name="Monthly's Orders" />
         <TodaysOrder data={data2} name="Summary" />
       </div>
-      <div className="lg:flex gap-2">
+      <div className="lg:flex justify-around gap-2">
         <TodaysOrder data={data} name="Today's Orders" />
         <TodaysOrder data={data2} name="Summary for Month" />
       </div>

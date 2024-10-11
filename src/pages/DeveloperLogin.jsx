@@ -43,7 +43,7 @@ const DeveloperLogin = () => {
   return (
     <div>
       <State />
-      <div className="w-32 h-12 mx-auto mt-10">
+      <div className="sm:w-32 w-[90vw] h-12 mx-auto mt-10">
         {error ? (
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
             <p>Error: Timer Expired</p>
@@ -65,7 +65,7 @@ const DeveloperLogin = () => {
       <div>
         <form
           action=""
-          className="w-3/5  flex flex-col gap-2 mx-auto mt-10  shadow-[0_5px_10px_-5px_rgba(0,0,0,1.3)] border-gray-300 bg-white p-10 rounded-md"
+          className="sm:w-3/5 w-[90vw]  flex flex-col gap-2 mx-auto mt-10  shadow-[0_5px_10px_-5px_rgba(0,0,0,1.3)] border-gray-300 bg-white p-10 rounded-md"
         >
           <h1 className="text-2xl font-semibold text-center">
             Developer Login
