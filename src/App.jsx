@@ -14,6 +14,9 @@ import ClientInvoiceLogin from "./pages/ClientInvoiceLogin.jsx";
 import ProductsDetails from "./pages/ProductsDetails.jsx";
 
 const App = () => {
+  
+
+  
   return (
     <BrowserRouter>
       <div className="flex bg-slate-100">
@@ -30,7 +33,7 @@ const App = () => {
             <Route path="/developer-login" element={<DeveloperLogin />} />
             <Route path="/state/:tab" element={<State />} />
             <Route path="/client-invoice-login" element={<ClientInvoiceLogin />} />
-            <Route path="/products-details" element={<ProductsDetails />} />
+            <Route path="/products-details" element={<ProductsDetails  />} />
           </Routes>
         </div>
       </div>

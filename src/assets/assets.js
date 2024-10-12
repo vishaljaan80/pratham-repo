@@ -23,6 +23,7 @@ import truct from './logo/truck.png';
 import Upload from './logo/Upload.png';
 import User from './logo/Users.png';
 import profile from './logo/profile-image.png';
+import download from './logo/Vector.png'
 
 
 export const images = {
@@ -34,6 +35,7 @@ export const images = {
   dollarSign,
   filterLines,
   grid,
+  download,
   dollar,
   home,
   icons,
@@ -189,5 +191,32 @@ export const data2 = [
     label: "Total Amound",
     bgColor: "bg-[#E8F1FD]",
     icon: images.dollar,
+  },
+];
+
+export const items = [
+  {
+    productName: "Product 1",
+    category: "Electronics",
+    quantity: 2,
+    unitPrice: 100,
+    discount: 10,
+    total: 180,
+  },
+  {
+    productName: "Product 2",
+    category: "Fashion",
+    quantity: 3,
+    unitPrice: 50,
+    discount: 5,
+    total: 135,
+  },
+  {
+    productName: "Product 3",
+    category: "Home",
+    quantity: 1,
+    unitPrice: 200,
+    discount: 20,
+    total: 160,
   },
 ];

@@ -6,7 +6,7 @@ const Sidebar = () => {
   return (
     <div className="w-fit h-screen sticky sm:flex  flex-col hidden top-0 left-0 border-r-2 p-0  md:p-6 ">
       {/* logo Section */}
-      <div className="logo flex cursor-pointer items-center px-2 gap-5">
+      <div className="logo flex cursor-pointer items-center md:mt-0 mt-5 px-2 gap-5">
         <div className="w-[45px] h-[39px] object-cover ">
           <img src={images.logo} className="w-full h-full rounded-lg" alt="" />
         </div>
