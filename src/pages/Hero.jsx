@@ -13,9 +13,9 @@ const Hero = () => {
   }
   
   return (
-    <div className="w-full ">
+    <div className="w-full mx-">
       <OrderDetails />
-     <div className="lg:flex justify-between gap-2">
+     <div className="lg:flex justify-between mx-5 gap-2">
       <OrderAmountBarChart/>
       <OrderCalculator name="No of Orders By each Employee" head1="Employee Name" head2="No of Orders" user={user}/>
      </div>

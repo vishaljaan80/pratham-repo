@@ -23,7 +23,7 @@ const OrderAmountBarChart = () => {
   };
 
   return (
-    <div className="p-5 lg:w-[53vw] w-[88%] bg-white rounded-lg m-6 my-4">
+    <div className="p-5 lg:w-[47vw] w-[88%] bg-white rounded-lg m-6 my-4">
       <div className="flex justify-between items-center mb-4">
         <h2 className="text-2xl text-[#101828d4]">Orders And Amount</h2>
         <select
